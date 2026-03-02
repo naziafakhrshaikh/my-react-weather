@@ -1,0 +1,168 @@
+/* Full page + background */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+
+.App {
+  background-image: url("./public/background.jpg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-blend-mode:luminosity;
+  min-height: 100vh;
+  /* Center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  color: #C8E9EC;
+}
+
+/* Date & Time */
+.date {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+}
+.time {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Display container */
+.display-container {
+  background: #B7DDE0;
+  backdrop-filter: blur(12px);
+  color: #1E3B3E;
+  padding: 30px;
+  border-radius: 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(9, 116, 120, 0.25);
+  margin-top: 20px;
+}
+
+/* Input bar */
+.display-container input {
+  padding: 10px 15px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #0A1A1C;
+  background: #D6F2F4;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.get-weather-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(to right, #4A7B7F, #27494C, #A6D2D6);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #B7DDE0;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 20px;
+}
+
+.get-weather-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* weather-container */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;              
+  gap: 8px;    
+  background: #B7DDE0;
+  backdrop-filter: blur(12px);
+  color: #1E3B3E;
+}
+
+/* Reduce the spacing between data.
+.weather-container h1,
+.weather-container h2,
+.weather-container h3,
+.weather-container p {
+  margin: 1px 0; 
+  line-height: 1.2;
+}
+/* to force the cutom color on font */
+/* .weather-container svg { */
+  /* color: #1E3B3E; */
+  /* } */
+
+/* .weather-container {
+  color: red !important;
+} */
+
+
+/* Weather Cards */
+.weather-card {
+  width: 100%;
+  background: #D6F2F4;
+  color: #1E3B3E;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.weather-card h2.temp {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1E3B3E;
+  margin: 10px 0;
+}
+
+.min-max-feels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 14px;
+  color: #1E3B3E;
+}
+
+/* Small Cards (cloudiness, humidity, etc.) */
+.weather-card.small-card {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #1E3B3E;
+}
+
+.weather-card.small-card .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.error-message {
+  color: red;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Mobile-friendly Responsive layout.*/
+/* for small screen. i,e phone */
+  @media screen and (min-width: 600px) {
+  .CollageContainer {
+    gap: 26px;
+    padding: 18px;
+  }
+}
