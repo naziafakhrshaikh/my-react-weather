@@ -1,6 +1,7 @@
 // Display.jsx
+import "./App.css";
 import { useState } from "react";
-import { getWeather } from "./Services/weatherService";
+import { getWeather } from "../Services/weatherService";
 import { WiThermometer, WiCloud, WiHumidity, WiStrongWind,} from "react-icons/wi";
 import { DescriptionIcons } from "./DescriptionIcons";
 

@@ -18,7 +18,7 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Calibri, sans-serif;
   color: #C8E9EC;
 }
 
@@ -91,24 +91,6 @@ html, body, #root {
   backdrop-filter: blur(12px);
   color: #1E3B3E;
 }
-
-/* Reduce the spacing between data.
-.weather-container h1,
-.weather-container h2,
-.weather-container h3,
-.weather-container p {
-  margin: 1px 0; 
-  line-height: 1.2;
-}
-/* to force the cutom color on font */
-/* .weather-container svg { */
-  /* color: #1E3B3E; */
-  /* } */
-
-/* .weather-container {
-  color: red !important;
-} */
-
 
 /* Weather Cards */
 .weather-card {
