@@ -11,7 +11,7 @@ function App() {
        // Start of div App
     <div className="App">
       
-      <h2>“Wheather or Not, Here’s the Weather”</h2>
+      <h2>“Whether or Not, Here’s the Weather”</h2>
       <p className="date">Date: {new Date().toLocaleDateString()}</p>
       <p className="time">Time: {new Date().toLocaleTimeString()}</p>
          
